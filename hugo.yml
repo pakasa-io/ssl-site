@@ -1,0 +1,94 @@
+baseURL: https://demo.gethugothemes.com/spydea/site/
+title: SSL Pakasa
+theme: spydea-hugo
+timeZone: Africa/Kampala
+pagination:
+  pagerSize: 6
+summaryLength: 10
+disableLanguages:
+  - fr
+hasCJKLanguage: false
+disableKinds:
+  - taxonomy
+  - term
+permalinks:
+  page:
+    pages: /:slugorfilename/
+services:
+  googleAnalytics:
+    ID: G-XXXXXXXXXX
+  disqus:
+    shortname: themefisher-template
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: hugo_stats.json
+      target: assets/watching/hugo_stats.json
+build:
+  noJSConfigInAssets: false
+  useResourceCacheWhen: fallback
+  buildStats:
+    enable: true
+  cachebusters:
+    - source: assets/.*\.(js|ts|jsx|tsx)
+      target: (js|scripts|javascript)
+    - source: assets/.*\.(css|sass|scss)$
+      target: (css|styles|scss|sass)
+    - source: (postcss|tailwind)\.config\.js
+      target: (css|styles|scss|sass)
+    - source: assets/.*\.(.*)$
+      target: $1
+outputs:
+  home:
+    - HTML
+    - RSS
+    - WebAppManifest
+imaging:
+  quality: 90
+  resampleFilter: lanczos
+caches:
+  images:
+    dir: :resourceDir/_gen
+    maxAge: 720h
+  assets:
+    dir: :resourceDir/_gen
+    maxAge: 720h
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: monokai
+  tableOfContents:
+    startLevel: 2
+    endLevel: 5
+    ordered: true
+mediaTypes:
+  application/manifest+json:
+    suffixes:
+      - webmanifest
+outputFormats:
+  WebAppManifest:
+    mediaType: application/manifest+json
+    rel: manifest
+params:
+  plugins:
+    css:
+      - link: plugins/swiper/swiper-bundle.css
+      - link: plugins/glightbox/glightbox.css
+      - link: plugins/font-awesome/v6/regular.css
+      - link: plugins/font-awesome/v6/brands.css
+      - link: plugins/font-awesome/v6/solid.css
+      - link: plugins/font-awesome/v6/icons.css
+      - link: plugins/aos/aos.css
+    js:
+      - link: plugins/aos/aos.js
+      - link: plugins/swiper/swiper-bundle.js
+      - link: plugins/glightbox/glightbox.js
+      - link: js/gallery-slider.js
+      - link: js/tab.js
+      - link: plugins/inline-svg/inline-svg.min.js
+      - link: plugins/cookie.js
+      - link: plugins/lazy-loader.js
+      - link: plugins/youtube-lite.js
