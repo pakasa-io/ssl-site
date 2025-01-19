@@ -89,7 +89,7 @@ features:
     image: "images/features/2.png"
 
 blog:
-  enable: true
+  enable: false
   title: "Take a Look at the Latest Articles from Our Blog"
   subtitle: "Latest Articles"
   button:

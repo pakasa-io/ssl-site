@@ -11,7 +11,7 @@ logo_height = "37px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "spydea"
+logo_text = "Pakasa SSL"
 # navbar fixed to top
 navbar_fixed = true
 # Main Sections
@@ -24,8 +24,8 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-theme_copyright = true
-copyright = "Copyright by your company"
+theme_copyright = false
+copyright = "Copyright by Pakasa"
 
 # Preloader
 [preloader]
@@ -34,7 +34,7 @@ preloader = "images/logo-dark.png" # use jpg, png, svg or gif format.
 
 # Navigation button
 [navigation_button]
-enable = true
+enable = false
 label = "Integration"
 link = "integration/"
 
@@ -50,7 +50,7 @@ email = "hello@spydea.com"
 
 # Subscription
 [announcement]
-enable = true
+enable = false
 content = "Pellen tesque in ipsum id orci porta dapibus. Sed port titor lectus nibh Vivamus [Learn More](#)"
 
 # Subscription
@@ -119,7 +119,7 @@ mastodon = "" # Your verification code
 
 # cookies
 [cookies]
-enable = true
+enable = false
 expire_days = 60
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
 button = "I Accept"
