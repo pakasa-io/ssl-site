@@ -1,0 +1,55 @@
+main:
+  - name: Maison
+    url: ""
+    weight: 1
+  - name: À propos
+    url: about/
+    weight: 2
+  - name: Blog
+    url: blog/
+    weight: 3
+  - weight: 4
+    name: Pages
+    hasChildren: true
+  - parent: Pages
+    name: Éléments
+    url: elements/
+    weight: 1
+  - parent: Pages
+    name: Carrière
+    url: career/
+  - parent: Pages
+    name: Tarification
+    url: pricing/
+  - parent: Pages
+    name: Auteurs
+    url: authors/
+  - parent: Pages
+    name: Contact
+    url: contact/
+  - parent: Pages
+    name: Terms & Conditions
+    url: terms-conditions/
+  - parent: Pages
+    name: "404"
+    url: 404/
+footer_01:
+  - name: About us
+    url: about/
+    weight: 1
+  - name: Contact us
+    url: contact/
+    weight: 2
+  - name: Pricing
+    url: pricing/
+    weight: 3
+footer_02:
+  - name: Blog
+    url: blog/
+    weight: 1
+  - name: Career
+    url: career/
+    weight: 2
+  - name: Terms & Conditions
+    url: terms-conditions/
+    weight: 3

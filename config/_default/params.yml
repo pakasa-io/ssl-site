@@ -1,0 +1,100 @@
+favicon: images/favicon.png
+logo: images/ssl-pakasa-logo-dark.svg
+logo_footer: images/ssl-pakasa-logo-light.svg
+logo_width: 158px
+logo_height: 37px
+logo_webp: false
+logo_text: SSL | Pakasa
+navbar_fixed: true
+mainSections:
+  - blog
+contact_form_action: ""
+google_tag_manager: ""
+google_adsense: ""
+custom_script: ""
+theme_copyright: false
+copyright: 2025 Pakasa
+preloader:
+  enable: false
+  preloader: images/logo-dark.png
+navigation_button:
+  enable: false
+  label: Integration
+  link: integration/
+navigation_button_outline:
+  enable: true
+  label: Get Started
+  link: contact/
+contact_info:
+  mobile: +256 703 512 563
+  email: sales@pakasa.io
+announcement:
+  enable: false
+  content: Pellen tesque in ipsum id orci porta dapibus. Sed port titor lectus
+    nibh Vivamus [Learn More](#)
+quote_form:
+  enable: true
+  submit_button_label: Get A Quote
+  placeholder: ""
+  action: "#"
+crisp_chat:
+  enable: false
+  crisp_website_id: 9aa449e1-9999-422a-938f-8567982eec6d
+valine_comment:
+  enable: false
+  appId: ""
+  appKey: ""
+  avatar: ""
+  pageSize: 10
+  visitor: true
+  highlight: true
+  recordIP: true
+  enableQQ: false
+metadata:
+  keywords:
+    - Boilerplate
+    - Hugo
+    - Themefisher
+    - GetHugoThemes
+  description: This is meta description
+  author: Themefisher
+  image: images/favicon.png
+matomo:
+  enable: false
+  url: ""
+  id: ""
+baidu:
+  enable: false
+  analytics_id: ""
+plausible:
+  enable: false
+  domain: ""
+counter:
+  enable: false
+  username: ""
+site_verification:
+  google: ""
+  bing: ""
+  baidu: ""
+  facebook: ""
+  mastodon: ""
+cookies:
+  enable: false
+  expire_days: 60
+  content:
+    This site uses cookies. By continuing to use this website, you agree to
+    their use.
+  button: I Accept
+social:
+  - title: facebook
+    icon: fab fa-facebook
+    link: "#"
+  - title: twitter
+    icon: fab fa-twitter
+    link: "#"
+  - title: mastodon
+    icon: fab fa-mastodon
+    link: "#"
+  - title: instagram
+    icon: fab fa-instagram
+    link: "#"
