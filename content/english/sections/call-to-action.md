@@ -1,7 +1,7 @@
 ---
 cta:
   enable: true
-  title: "Sign up and Create Your Online Store Today!"
+  title: "Let's get your website secured Today!"
   image: "/images/cta-image.png"
   supported_tech:
     title: "Supported"
@@ -18,9 +18,6 @@ cta:
     primary:
       label: "Get A Quote"
       link: "contact/"
-    outline:
-      label: "Integration"
-      link: "integration/"
 
 # don't create a separete page
 _build:

@@ -2,24 +2,20 @@
 title: "Contact"
 draft: false
 layout: "contact"
+pakasa_cta: false
 
 contact_links:
   - title: "Contact Support"
     links:
-      - label: "support@company.com"
-        link: "mailto:support@company.com"
-      - label: "+1 234 567 8999"
-        link: "tell:+1 234 567 8999"
-  - title: "Contact Careers"
+      - label: support@pakasa.io
+        link: 'mailto:support@pakasa.io'
+      - label: +256 703 512 563
+        link: "tell:+256 703 512 563"
+
+  - title: "Contact Sales"
     links:
-      - label: "support@company.com"
-        link: "mailto:support@company.com"
-      - label: "+1 234 567 8999"
-        link: "tell:+1 234 567 8999"
-  - title: "Contact Press"
-    links:
-      - label: "support@company.com"
-        link: "mailto:support@company.com"
-      - label: "+1 234 567 8999"
-        link: "tell:+1 234 567 8999"
+      - label: "sales@pakasa.io"
+        link: "mailto:sales@pakasa.io"
+      - label: +256 703 512 563
+        link: "tell:+256 703 512 563"
 ---

@@ -1,0 +1,16 @@
+name: test
+sales:
+  name: test
+  email:
+    label: sales@pakasa.io
+    link: 'mailto:sales@pakasa.io'
+  call:
+    label: +256 703 512 563
+    link: 'tell:+256 703 512 563'
+support:
+  email:
+    label: support@pakasa.io
+    link: 'mailto:support@pakasa.io'
+  call:
+    label: +256 703 512 563
+    link: 'tell:+256 703 512 563'

@@ -3,7 +3,7 @@ main:
     url:
     weight: 1
   - name: Pricing
-    url: pricing/
+    url: /#pricing
     weight: 2
   - name: Contact
     url: contact/
@@ -13,7 +13,7 @@ footer_01:
     url: contact/
     weight: 1
   - name: Pricing
-    url: pricing/
+    url: /#pricing
     weight: 2
 footer_02:
 #  - name: Blog

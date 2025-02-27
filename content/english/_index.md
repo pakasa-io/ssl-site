@@ -18,12 +18,12 @@ banner:
       - icon: "fa-brands fa-android"
         link: "#?"
   facility:
-    - "Works Anywhere"
-    - "Get Rewarded"
-    - "No Hidden Fees"
+    - Cheap
+    - Fast
+    - Secure
 
 brands:
-  enable: true
+  enable: false
   list:
     - "/images/brands/1.png"
     - "/images/brands/2.png"
@@ -37,7 +37,7 @@ brands:
     - "/images/brands/7.png"
 
 feature_list:
-  enable: true
+  enable: false
   title: "A Technology Approach"
   subtitle: "WE ARE THE ULTIMATE"
   description: "Pellen tesque in ipsum id orci porta dapibus. Sed port titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula"
@@ -56,7 +56,7 @@ feature_list:
       description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
 
 process:
-  enable: true
+  enable: false
   title: "Don't Take Our Word For It"
   subtitle: "EXPERIENCE SPEAKS"
   description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt."
@@ -72,21 +72,21 @@ process:
       image: "images/tab-contents/feature-tab-content-3.jpg"
 
 fun_fact:
-  enable: true
+  enable: false
   title: "A Few Numbers We are Proud"
   subtitle: "ACHIEVING EXCELLENCE"
   description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum"
 
-features:
-  - title: "Take Your Marketing to the Next Level."
-    subtitle: "INNOVATIVE STRATEGIES"
-    description: "Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus."
-    image: "images/features/1.png"
-
-  - title: "Choose the Right Plan for Your Team"
-    subtitle: "COLLABORATIVE SOLUTIONS"
-    description: "Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus."
-    image: "images/features/2.png"
+#features:
+#  - title: "Take Your Marketing to the Next Level."
+#    subtitle: "INNOVATIVE STRATEGIES"
+#    description: "Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus."
+#    image: "images/features/1.png"
+#
+#  - title: "Choose the Right Plan for Your Team"
+#    subtitle: "COLLABORATIVE SOLUTIONS"
+#    description: "Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit imperdiet et, porttitor at sem. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Proin eget elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Proin eget tortor risus."
+#    image: "images/features/2.png"
 
 blog:
   enable: false
