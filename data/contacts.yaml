@@ -5,12 +5,14 @@ sales:
     label: sales@pakasa.io
     link: 'mailto:sales@pakasa.io'
   call:
-    label: +256 703 512 563
-    link: 'tell:+256 703 512 563'
+    label: +256 752 419 325
+    link: 'tell:+256 752 419 325'
 support:
   email:
     label: support@pakasa.io
     link: 'mailto:support@pakasa.io'
   call:
-    label: +256 703 512 563
-    link: 'tell:+256 703 512 563'
+    label: +256 752 419 325
+    link: 'tell:+256 752 419 325'
+
+

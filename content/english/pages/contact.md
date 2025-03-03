@@ -9,13 +9,13 @@ contact_links:
     links:
       - label: support@pakasa.io
         link: 'mailto:support@pakasa.io'
-      - label: +256 703 512 563
-        link: "tell:+256 703 512 563"
+      - label: +256 752 419 325
+        link: "tell:+256 752 419 325"
 
   - title: "Contact Sales"
     links:
       - label: "sales@pakasa.io"
         link: "mailto:sales@pakasa.io"
-      - label: +256 703 512 563
-        link: "tell:+256 703 512 563"
+      - label: +256 752 419 325
+        link: "tell:+256 752 419 325"
 ---
