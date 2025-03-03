@@ -1,0 +1,36 @@
+{{ with site.GetPage "sections/pricing" }}
+    {{ with .Params.pricing }}
+        <section id="pricing" class="pricing">
+        <div class="container relative z-30 py-8">
+            <div class="flex-row text-center">
+                <div class="flex-col w-full">
+                    <h3>{{ .title }}</h3>
+                    <div class="max-w-[700px] mx-auto inline-block pt-2">
+                        {{ .summary }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8 md:gap-16 pt-12">
+                {{ range .offers }}
+                <div class="flex-1 border border-stone-100 bg-white rounded-sm shadow-md p-6">
+                    <h2 class="text-xl font-bold mb-4">{{ .header }}</h2>
+                    <p class="text-gray-700 mb-4">
+                        {{ .summary }}
+                    </p>
+                    <div class="py-4">
+                        <small class="text-stone-500">From</small>
+                        <div class="font-bold text-xl">{{ .price }}/yr</div>
+                    </div>
+
+                    <a href="{{ .link | relLangURL }}"
+                       class="btn w-full md:w-auto outline border-stone-800 hover:border-yellow-400 text-stone-800 px-4 py-2 rounded hover:bg-yellow-300 hover:text-stone-800">
+                        Get Started
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        </section>
+    {{ end }}
+{{ end }}

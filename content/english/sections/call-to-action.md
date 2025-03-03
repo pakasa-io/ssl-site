@@ -2,7 +2,7 @@
 cta:
   enable: true
   title: "Let's get your website secured Today!"
-  image: "/images/cta-image.png"
+  image: "/images/hero-cta.png"
   supported_tech:
     title: "Supported"
     list:
@@ -16,7 +16,7 @@ cta:
         link: "#?"
   buttons:
     primary:
-      label: "Get A Quote"
+      label: "Get a Quote"
       link: "contact/"
 
 # don't create a separete page

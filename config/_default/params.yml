@@ -4,7 +4,7 @@ logo_footer: images/ssl-pakasa-logo-light.svg
 logo_width: 158px
 logo_height: 37px
 logo_webp: false
-logo_text: SSL | Pakasa
+logo_text: Pakasa | SSL
 navbar_fixed: true
 mainSections:
   - blog

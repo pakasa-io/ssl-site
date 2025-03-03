@@ -1,0 +1,78 @@
+{{ with site.GetPage "sections/banner" }}
+  {{ with .Params.banner }}
+    {{ if .enable }}
+<section class="section banner relative overflow-hidden before:z-10 after:z-10">
+  <div class="container relative z-30">
+    <div class="row items-center">
+      <div class="lg:col-6">
+        <h1 data-aos="fade-up-sm"
+                class="mb-6 text-[35px] sm:text-[40px] xl:text-[55px]">
+          {{ .title | markdownify }}
+        </h1>
+        <h4 class="pb-2">{{ .subTitle | markdownify }}</h4>
+        <p data-aos="fade-up-sm" data-aos-delay="150" class="mb-6 text-lg">
+          {{ .content | markdownify }}
+        </p>
+
+        <div data-aos="fade-up-sm" data-aos-delay="200">
+          {{ partial "components/quote-form.html" (dict "Class" "shadow-default my-10") }}
+        </div>
+
+        {{ with .supported_tech }}
+        <div class="flex flex-col md:flex-row items-center md:justify-start gap-4">
+        <span data-aos="fade-right" data-aos-delay="250"
+              class="flex-none text-dark align-middle text-lg font-bold inline-block  md:inline w-full md:w-auto text-center ">
+                {{ .title | markdownify }}
+        </span>
+        <ul class="flex-none flex flex-row gap-x-6 max-w-[200px] mx-auto md:mx-0">
+          {{ range $i, $e := .list }}
+          <li class="flex-none ">
+            <a href="{{ .link }}">
+              <img src="{{ .src }}" class="w-auto h-[36px]" />
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+        </div>
+        {{ end }}
+        <div class="py-8">
+          <hr class="border-border/50 h-[1px] border-0 border-b bg-transparent" />
+        </div>
+        <ul class="list-line-separator flex flex-wrap gap-x-6 gap-y-2">
+          {{ range $i, $e := .facility }}
+          <li data-aos="fade-in" data-aos-delay="{{ mul $i 50 }}">
+            <i class="fa-solid fa-check mr-2 align-middle text-2xl font-bold text-emerald-400"></i>
+            <p class="text-dark inline-block align-middle text-lg font-medium">
+              {{ . }}
+            </p>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="lg:col-6 mx-auto max-w-[600px] pt-24 lg:pt-0">
+        <div data-aos="fade-up-sm" class="image-block relative mr-[5.5%] md:mr-6 lg:ml-6">
+          {{ with .image }}
+            {{ partial "image.html" (dict "Src" .src "Class" "banner-image w-100 h-auto" "Alt" "banner-image") }}
+          {{ end }}
+
+          <!-- Start Start Bg Shape -->
+          <div class="pointer-events-none absolute left-[40px] top-[-50px] -z-20 w-[40%] select-none">
+            {{ partial "image.html" (dict "Src" "images/shapes/banner-s-1.svg" "Class" "inline-svg text-secondary" "Alt" "shape") }}
+          </div>
+          <div class="pointer-events-none absolute bottom-[-70px] right-[-130px] -z-20 w-[40%] select-none">
+            {{ partial "image.html" (dict "Src" "images/shapes/banner-s-2.svg" "Class" "inline-svg text-quinary" "Alt" "shape") }}
+          </div>
+          <!-- End Start Bg Shape -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Main Content -->
+
+  {{ partial "components/bg-lines.html" (dict "Color" "bg-line-yellow") }}
+  <!-- End background lines -->
+</section>
+<!-- End Banner Section -->
+    {{ end }}
+  {{ end }}
+{{ end }}

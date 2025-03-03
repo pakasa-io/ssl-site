@@ -1,102 +1,7 @@
 {{ define "main" }}
-  {{ with .Params.banner }}
-    <section
-      class="section banner relative overflow-hidden before:z-10 after:z-10">
-      <div class="container relative z-30">
-        <div class="row items-center">
-          <div class="lg:col-6">
-            <h1
-              data-aos="fade-up-sm"
-              class="mb-6 text-[35px] sm:text-[50px] xl:text-[65px]">
-              {{ .title | markdownify }}
-            </h1>
-            <p data-aos="fade-up-sm" data-aos-delay="150" class="mb-6 text-lg">
-              {{ .description | markdownify }}
-            </p>
-            <div data-aos="fade-up-sm" data-aos-delay="200">
-              {{ partial "components/quote-form.html" (dict "Class" "shadow-default my-10") }}
-            </div>
-            {{ with .supported_tech }}
-              <span
-                data-aos="fade-right"
-                data-aos-delay="250"
-                class="text-dark align-middle text-lg font-bold">
-                {{ .title | markdownify }}
-              </span>
-              <ul
-                class="xs:ml-7 xs:mt-0 xs:inline-flex mt-2 inline-flex flex-row gap-8 align-middle text-[28px]">
-                {{ range $i, $e := .list }}
-                  <li
-                    data-aos="fade-in"
-                    class="text-dark"
-                    data-aos-delay="{{ add (mul $i 50) 250 }}">
-                    <a href="{{ .link }}">
-                      <i class="{{ .icon }}"></i>
-                      <span class="sr-only">{{ .icon }}</span>
-                    </a>
-                  </li>
-                {{ end }}
-              </ul>
-            {{ end }}
-            <div class="py-8">
-              <hr
-                class="border-border/50 h-[1px] border-0 border-b bg-transparent" />
-            </div>
-            <ul class="list-line-separator flex flex-wrap gap-x-6 gap-y-2">
-              {{ range $i, $e := .facility }}
-                <li data-aos="fade-in" data-aos-delay="{{ mul $i 50 }}">
-                  <i
-                    class="fa-solid fa-check mr-2 align-middle text-2xl font-bold text-emerald-400"></i>
-                  <p
-                    class="text-dark inline-block align-middle text-lg font-medium">
-                    {{ . }}
-                  </p>
-                </li>
-              {{ end }}
-            </ul>
-          </div>
-          <div class="lg:col-6 mx-auto max-w-[600px] pt-24 lg:pt-0">
-            <div
-              data-aos="fade-up-sm"
-              class="image-block relative mr-[5.5%] md:mr-6 lg:ml-6">
-              {{ with .images }}
-                {{ partial "image.html" (dict "Src" .main "Class" "banner-image w-100 h-auto" "Alt" "banner-image") }}
-                {{ partial "image.html" (dict "Src" .left "Class" `absolute bottom-16 left-0 w-[40%] rounded-lg
-                  shadow-default` "Alt" "banner-image")
-                }}
-                {{ partial "image.html" (dict "Src" .right "Class" `absolute right-0 top-0 w-[30%] rounded-lg md:-right-32 md:top-14 md:w-[40%] xl:top-36` "Alt" "banner-image") }}
-              {{ end }}
+  {{ partial "banner.html" . }}
+  {{ partial "pricing.html" . }}
 
-
-              <!-- Start Start Bg Shape -->
-              <div
-                class="pointer-events-none absolute left-[40px] top-[-50px] -z-20 w-[40%] select-none">
-                {{ partial "image.html" (dict "Src" "images/shapes/banner-s-1.svg" "Class" "inline-svg text-secondary" "Alt"
-                  "shape")
-                }}
-              </div>
-              <div
-                class="pointer-events-none absolute bottom-[-70px] right-[-130px] -z-20 w-[40%] select-none">
-                {{ partial "image.html" (dict "Src" "images/shapes/banner-s-2.svg" "Class" "inline-svg text-quinary" "Alt"
-                  "shape")
-                }}
-              </div>
-              <!-- End Start Bg Shape -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Main Content -->
-
-      {{ partial "components/bg-lines.html" (dict "Color" "bg-line-yellow") }}
-      <!-- End background lines -->
-    </section>
-    <!-- End Banner Section -->
-  {{ end }}
-
-  <section id="pricing">
-    <h2> Pricing</h2>
-  </section>
   {{ with .Params.brands }}
     {{ if .enable }}
       <section class="md:section">
@@ -491,7 +396,6 @@
       <!-- End Articles Section -->
     {{ end }}
   {{ end }}
-
 
   <!-- cache partial only in production -->
   {{ if hugo.IsProduction }}

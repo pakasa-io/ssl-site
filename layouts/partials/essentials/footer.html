@@ -1,14 +1,10 @@
 <footer
-  class="bg-theme-dark relative z-20 after:absolute after:left-0 after:top-0 after:-z-10 after:h-[400px] after:w-full after:bg-white after:content-['']">
-  <div class="container relative z-30">
-    {{ partial "call-to-action.html" . }}
-  </div>
-  <!-- End Call To Action -->
+  class="bg-theme-dark relative bg-stone-900 mt-12">
 
   <div
     data-aos="fade-in"
     data-aos-delay="50"
-    class="container relative z-30 pt-[80px] lg:pt-[130px]">
+    class="container relative z-30 pt-[80px] lg:pt-[72px]">
     <div class="row items-center justify-center pb-10 lg:justify-between">
       <div class="col-auto">
         <a href="{{ site.BaseURL | relLangURL }}">
@@ -57,7 +53,7 @@
         <div class="widget lg:pl-8">
           <h3 class="widget-title">{{ i18n "email_us" }}</h3>
           <div
-            class="mx-auto -mt-1 mb-4 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
+            class="mx-auto -mt-1 mb-4 w-fit text-[22px] font-bold text-yellow-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
             <a href="mailto:{{ site.Params.contact_info.email }}"
               >{{ site.Params.contact_info.email }}</a
             >
@@ -82,7 +78,7 @@
         <div class="xl:pl-16">
           <h3 class="widget-title">{{ i18n "contact_us" }}</h3>
           <div
-            class="mx-auto -mt-1 w-fit text-[22px] font-bold text-amber-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
+            class="mx-auto -mt-1 w-fit text-[22px] font-bold text-yellow-400 transition-all duration-300 hover:underline hover:underline-offset-4 sm:mx-0">
             <a href="tel:{{ site.Params.contact_info.mobile }}"
               >{{ site.Params.contact_info.mobile }}</a
             >
